@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background-color: transparent;
+    color: white;
+    font-family: sans-serif;    
+}
+body {    
+    display:flex;
+    flex-direction: column;
+    align-items:start;
+}
+main{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+}
+.Navbar{
+    position:relative;
+    background-color: transparent;
+    top: 0 ;
+    height:3vw;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-self: start;
+    padding: 2% 10%;
+    overflow: hidden;
+}
+.Navbar_logo{
+    width: 6vw;
+    height: 2vw;
+    display: flex;
+}
+/* .logo{
+    width: 100%;
+    height: 100%;
+} */
+.nav_right{
+    gap: 2vw;    
+    display: flex;    
+    color: white;
+    }
+#dropdown{
+    border:none;
+    color: white;
+}
+.language_dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-size-adjust: 28px;
+    border: 1px solid white;
+    padding:0.4rem;
+    /* background: rgba(0, 0, 0, 0.4); */
+    border-radius: 0.4vw;
+    background: transparent;
+    height: 2vw;
+    width: 6vw;
+}
+.signup_button{
+    background-color: #D00;
+    border: #D00;
+    padding: 0.25rem,0.4rem;
+    color: white;
+    border-radius: 0.4vw;
+    height: 2vw;
+    width: 6vw;
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#CP{
+    color: #CE2021;;
+}
+
+.container {
+  position: relative;
+  max-width: 800px; 
+   margin: 0; /*Center it */
+ }
+
+/* .container, .content { */
+  /* position: absolute; Position the background text */
+  /* bottom: 0; At the bottom. Use top:0 to append it to the top */
+  /* background: rgb(0, 0, 0); Fallback color */
+  /* background: rgba(0, 0, 0, 0.5); Black background with 0.5 opacity */
+  /* color: #f1f1f1; Grey text */
+  /* width: 100%; */
+  /* padding: 20px; Some padding */
+/* }  */
+/* #xyz{
+  height: 100%;
+  width: 100%;
+} */
+
+
+
+
+
+html,
+body {
+  margin: 0;
+  background-color: transparent;
+  font-family: sans-serif;
+}
+
+.slideshow {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 0px;
+    /* margin: 0 auto; */
+    /* background-color: #000; */
+    background-color: transparent;
+    overflow: hidden;
+    counter-reset: slide;
+    display: block;
+    position:relative;
+}
+  
+input {
+    position: relative;
+    /* display: block; */
+    opacity: 0;
+    top: -25px;
+    counter-increment: slide;
+}
+input:checked + .slide {
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
+}
+input:checked + .slide .slide__content {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  input:checked + .slide .slide__content:before {
+    color: #FFF;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    content: counter(slide) " of 5";
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    text-align: right;
+  }
+  input:checked:nth-of-type(1) ~ nav label:nth-child(1) {
+    color: white;
+  }
+  input:checked:nth-of-type(2) ~ nav label:nth-child(2) {
+    color: white;
+  }
+  input:checked:nth-of-type(3) ~ nav label:nth-child(3) {
+    color: white;
+  }
+  input:checked:nth-of-type(4) ~ nav label:nth-child(4) {
+    color: white;
+  }
+  input:checked:nth-of-type(5) ~ nav label:nth-child(5) {
+    color: white;
+  }
+  
+  .slide {
+    position:relative;
+    display:block;
+    margin-left:2vw;
+    transform: translateX(-100%);
+    width: 50%;
+    height: 100%;
+    background-size: 50% 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide__content {
+    position:relative;
+    display:block;
+    /* margin-left: 25vw; */
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+    padding: 50px;
+    color: white;
+    left: 100%;
+    display: none;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+  }
+  .slide__html {
+    display: none;
+  }
+  .slide:nth-child(2) {
+    background: url(Images/pepper.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  .slide:nth-child(2):after {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+  }
+  
+  .slide:nth-child(4) {
+    background: url(Images/vettruino.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  .slide:nth-child(4):after {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+  }
+  
+  .slide:nth-child(6) {
+    background: url(Images/pepper.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.slide:nth-child(6):after {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+}
+  
+.slide:nth-child(8) {
+    background: url(Images/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.slide:nth-child(8):after {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+}
+ 
+.slide:nth-child(10) {
+    background: url(Images/makerslab-logo-white.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.slide:nth-child(10):after {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+}
+  
+nav{
+    position:relative;
+    display:flex;
+    justify-self: center;
+    align-items: center;
+    margin-left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 60px;
+    overflow: auto;
+    background-size: 100%;
+    height: 60px;
+    background: linear-gradient(to bottom, nav 10%);
+}
+  
+label {
+    box-sizing: border-box;
+    color: #AAA;
+    font-weight: bold;
+    display: block;
+    width: calc((100% / 5) - 2%);
+    margin: 5px 1% 5px 1%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 4px #AAA;
+    text-align: center;
+    float: left;
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+label:hover {
+    cursor: pointer;
+    color: #FFF;
+    border-bottom: solid 4px #FFF;
+  }
+label:nth-child(1) {
+    left: calc(50% + (0 * (50% / 5)));
+    border-bottom-color: #DD0000;
+  }
+label:nth-child(2) {
+    left: calc(50% + (1 * (50% / 5)));
+    border-bottom-color: #F03636;
+  }
+label:nth-child(3) {
+    left: calc(50% + (2 * (50% / 5)));
+    border-bottom-color: #F95F5F;
+  }
+label:nth-child(4) {
+    left: calc(50% + (3 * (50% / 5)));
+    border-bottom-color: #F98787;
+  }
+label:nth-child(5) {
+    left: calc(50% + (4 * (50% / 5)));
+    border-bottom-color: #F0F0F0;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  /* @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300); */
+.footer {
+    margin-top: 4vw;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 300px;
+}
+  
+  /* Taller footer on small screens */
+  @media (max-width: 567em) {
+      body {
+        margin-bottom: 700px;
+      }
+      .footer {
+        height: 700px;
+      }
+  }
+  
+  /* Sticky footer style and color
+  -------------------------------------------------- */
+  footer {
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: white;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration:none;
+  }
+  
+  footer a:hover, footer a:focus {
+    color: #aaa;
+    text-decoration:none;
+    border-bottom:1px dotted #999;
+  }
+  
+  footer .form-control {
+      background-color: #1f2022;
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+      border: none;
+      resize: none;
+      color: #d1d2d2;
+      padding: 0.7em 1em;
+  }

@@ -1,0 +1,183 @@
+<!-- Include Header And Footer  on all pages using djangof-->
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="eng">
+
+<head>
+  <title>IDR Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <script src="index.js"></script>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="Navbar">
+    <div class="Navbar_logo">
+      <img src="Images/makerslab-logo-white.png" alt="logo" class="logo" />
+    </div>
+    <div class="nav_right">
+      <div class="language_dropdown">
+        <i class="fa fa-globe"></i>
+        <select name="Language" id="dropdown">
+          <option value="English" selected>English</option>
+          <option value="Hindi">हिंदी</option>
+        </select>
+      </div>
+      <div class="Navbar_signup">
+        <a href="authentication/login.html">
+          <button class="signup_button">Login</button></a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- SLIDESHOW -->
+  <main>
+
+    <nav>
+      <!-- Add slide labels here! -->
+      <label class="slide-button" for="slideCheckbox1">IDR Studio</label>
+      <label class="slide-button" for="slideCheckbox2">vetturino</label>
+      <label class="slide-button" for="slideCheckbox3">pepper</label>
+      <label class="slide-button" for="slideCheckbox4">Enetra</label>
+      <label class="slide-button" for="slideCheckbox5">Extroc</label>
+    </nav>
+    <fieldset class="slideshow">
+
+      <!-- Slide 1 -->
+      <input type="radio" id="slideCheckbox1" name="slide" checked autofocus></input>
+      <div class="slide">
+        <div class="slide__html">
+          <!-- <img src="Images/img1.jpg" alt="Description of the image"> -->
+          <!-- You can include HTML instead of a background image using .slide__html -->
+        </div>
+        <div class="slide__content">
+          <h1>Slideshow Concept</h1><br><br><br>
+          <p>A pure CSS and HTML<br> slideshow concept.</p>
+          <p>To add or<br> remove slides:</p>
+          <ul>
+            <li>Add a new slide template and label in the HTML</li>
+            <!-- <li>Update the <code>$slide-count</code> SCSS variable</li>
+              <li>Tab colours: Update the <code>$c-slides</code> SCSS variable</li>
+              <li>Slide popout images: Update the <code>$b-slides</code> SCSS variable</li> -->
+          </ul>
+          <p>Use the tabs below to change slide</p>
+          <p><strong style="color: #D00">NEW:</strong> Arrow keys work too after your first selection.</p>
+          <p>Et voila.</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <input type="radio" id="slideCheckbox2" name="slide"></input>
+      <div class="slide">
+        <div class="slide__content">
+          <p>Lorem ipsum dolor sit amet consectetur.<br> At id varius mi a orci augue congue mollis vestibulum.<br> Enim
+            ornare gravida feugiat quisque. Duis eu etiam netus platea tincidunt posuere bibendum. Urna orci, Lorem
+            ipsum dolor sit amet consectetur. At id varius mi a orci augue congue mollis vestibulum. Enim ornare gravida
+            feugiat quisque. Duis eu etiam netus platea tincidunt posuere bibendum. Urna orci,Lorem ipsum dolor sit amet
+            consectetur. At id varius mi a orci augue congue mollis vestibulum. Enim ornare gravida feugiat quisque.
+            Duis eu etiam netus platea tincidunt posuere bibendum. Urna orci,Lorem ipsum dolor sit amet consectetur. At
+            id varius mi a orci augue congue mollis vestibulum. Enim ornare gravida feugiat quisque. Duis eu etiam netus
+            platea tincidunt posuere bibendum. Urna orci,Lorem ipsum dolor sit amet consectetur. At id varius mi a orci
+            augue congue mollis vestibulum. Enim ornare gravida feugiat quisque. Duis eu etiam netus platea tincidunt
+            posuere bibendum. Urna orci,
+          </p>
+
+        </div>
+      </div>
+
+
+      <!-- Slide 3 -->
+      <input type="radio" id="slideCheckbox3" name="slide"></input>
+      <div class="slide">
+        <div class="slide__content">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <input type="radio" id="slideCheckbox4" name="slide"></input>
+      <div class="slide">
+        <div class="slide__content">
+          <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <input type="radio" id="slideCheckbox5" name="slide"></input>
+      <div class="slide">
+        <div class="slide__content">
+          <h1>The end</h1>
+          <p>It's over</p>
+        </div>
+      </div>
+      <!-- Add more slides here! -->
+    </fieldset>
+  </main>
+</body>
+<br><br>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <h5><i class="fa fa-road"></i> IDR Studio Maker's Lab.</h5>
+        <div class="row">
+          <div class="col-6">
+            <ul class="list-unstyled">
+              <li><a href="Footer/Achievements.html">Achievements</a></li>
+              <li><a href="Footer/CurrentProjects.html">Current Projects</a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul class="list-unstyled">
+              <li><a href="Footer/ResearchPapers.html">Research Papers</a></li>
+              <li><a href="Footer/Know_our_Team.html">Know our Team</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="nav">
+          <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+          <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
+          <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
+        </ul>
+        <br>
+      </div>
+      <div class="col-md-2">
+        <h5 class="text-md-right">Contact Us</h5>
+        <hr>
+      </div>
+      <div class="col-md-5">
+        <form>
+          <fieldset class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          </fieldset>
+          <fieldset class="form-group">
+            <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+          </fieldset>
+          <fieldset class="form-group text-xs-right">
+            <button type="button" class="btn btn-secondary-outline btn-lg">Send</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>
