@@ -1,11 +1,11 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
     background-color: transparent;
     color: white;
     font-family: sans-serif;    
-}
+} */
 body {    
     display:flex;
     flex-direction: column;
@@ -83,7 +83,7 @@ main{
   position: relative;
   max-width: 800px; 
    margin: 0; /*Center it */
- }
+}
 
 /* .container, .content { */
   /* position: absolute; Position the background text */

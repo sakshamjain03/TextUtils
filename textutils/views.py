@@ -9,8 +9,8 @@ def index(request):
 # def removepunc(request):
 #     return HttpResponse("Hello")
 
-def capall(request):
-    return HttpResponse("YELLOW")
+# def capall(request):
+#     return HttpResponse("YELLOW")
 
 def analyse(request):
 # Take Text Input
@@ -56,8 +56,7 @@ def analyse(request):
             
 
     else:        
-        analyzed=text
-        return HttpResponse("Input is "+text+"\n Output is"+text)
+        text=analyzed="N/A"
     
     data={"removed":removepunc,"newline":newline,'uppercase':uppercase,'spaceremover':spaceremover, 'input':text,'output':analyzed}
 
